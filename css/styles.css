@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
 :root{
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
@@ -8,9 +13,19 @@ a{
   text-decoration: none;
   color: white;
 }
-*{
-    margin: 0;
+a:hover{
+  text-decoration: underline white 2px;
+  text-underline-offset: 10px;
 }
+
+footer .upper-side .logos-sm img{
+  height: 24px;
+}
+footer .upper-side .logos-sm .image:hover{
+  border-bottom: 2px solid white;
+}
+
+
 body{
   background: black;
   color: white;
