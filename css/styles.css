@@ -13,15 +13,18 @@ a{
   text-decoration: none;
   color: white;
 }
+
 a:hover{
   text-decoration: underline white 2px;
   text-underline-offset: 10px;
 }
 
+
 footer .upper-side .logos-sm img{
   height: 24px;
 }
 footer .upper-side .logos-sm .image:hover{
+  cursor: pointer;
   border-bottom: 2px solid white;
 }
 
@@ -39,7 +42,7 @@ body{
 }
 
 header{
-  padding: 2em 6em;
+  padding: 50px 170px;
   display: grid;
   background-image: url("../images/desktop/image-hero.jpg");
   background-size: cover;
@@ -49,17 +52,21 @@ header .upper-side{
   justify-content: space-between;
 }
 header .upper-side .nav-bar{
+  margin-top: 10px;
   display: flex;
-  width: 350px;
-  justify-content: space-around;
+  width: 400px;
+  justify-content: space-between;
 }
 header .lower-side h1{
-  margin: 2em 0em;
-  border: 1px solid white;
-  padding: 0.5em;
+  font-family: "Josefin Sans", cursiv;
+  text-transform: uppercase;
+  margin: 2.5em 0em;
+  border: 2px solid white;
+  padding: 0.5em 1em 0.5em 0.7em;
   font-size: 4em;
   width: 50%;
-  text-align: left;
+  font-weight: normal;
+  line-height: 1em;
 }
 
 
@@ -118,7 +125,10 @@ main .main-2 .btn{
   background: transparent;
   padding: 5px 30px; 
 }
-
+main .main-2 .btn:hover{
+  background: var(--black);
+  color: var(--white);
+}
 
 footer{
   padding: 2em 3em;
