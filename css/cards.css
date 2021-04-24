@@ -2,11 +2,15 @@ main .main-3{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2,600px);
-  gap: 10px;
+  gap: 20px;
 }
 
+main .main-3 .card:hover{
+  opacity: 0.5;
+  color: var(--black);
+}
 main .main-3 .card p{
-  color: white;
+
   position: absolute;
   bottom: 0;
   left: 0;
@@ -14,6 +18,7 @@ main .main-3 .card p{
   font-size: 2em;
 }
 main .main-3 .card{
+  color: white;
   position: relative;
   background-size: cover;
 }
