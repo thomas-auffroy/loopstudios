@@ -116,6 +116,7 @@ main .main-1 .info p{
 main .main-2{
   margin-top: 10em;
   margin-bottom: 5em;
+  
   display: flex;
   justify-content: space-between;
 }
