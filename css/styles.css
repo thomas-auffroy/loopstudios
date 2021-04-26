@@ -35,7 +35,6 @@ main .main-2 .btn:hover{
 
 body{
   background: black;
-  color: white;
   font-family: "Alata", cursive;
   font-size: 15px;
 }
@@ -62,6 +61,7 @@ header .upper-side .nav-bar{
   justify-content: space-between;
 }
 header .lower-side h1{
+  color: white;
   margin: 2.5em 0em;
   border: 2px solid white;
   padding: 0.5em 1em 0.5em 0.7em;
@@ -72,7 +72,7 @@ header .lower-side h1{
 
 
 main{
-  padding: 50px 170px;
+  padding: 170px;
   background: var(--white);
   color: var(--black);
   display: flex;
@@ -160,10 +160,13 @@ footer .upper-side .logos-sm img{
 footer .lower-side{
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 footer .lower-side .nav-bar{
   display: flex;
   justify-content: space-between;
   width: 400px;
+}
+footer .lower-side p{
+  color: var(--dark-gray);
 }
