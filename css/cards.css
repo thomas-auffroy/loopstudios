@@ -1,8 +1,9 @@
 main .main-3{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2,600px);
+  grid-template-rows: repeat(2,500px);
   gap: 25px;
+  font-family: "Josefin Sans", cursiv;
 }
 
 main .main-3 .card:hover{
@@ -10,48 +11,51 @@ main .main-3 .card:hover{
   color: var(--black);
 }
 main .main-3 .card p{
+  
   text-transform: uppercase;
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 30px 40px;
+  padding: 0px 60px 40px 40px;
   font-size: 2em;
 }
 main .main-3 .card{
-  color: var(--dark-gray);
+  filter: brightness(100%);
+  color: var(--white);
   position: relative;
   background-size: cover;
+  background-position: center;
 }
 
 
 main .main-3 .card:first-of-type{
-  background-image: url("../images/desktop/image-deep-earth.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url("../images/desktop/image-deep-earth.jpg");
 }
 
 main .main-3 .card:nth-of-type(2){
-  background-image: url("../images/desktop/image-night-arcade.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url("../images/desktop/image-night-arcade.jpg");
 }
 
 main .main-3 .card:nth-of-type(3){
-  background-image: url("../images/desktop/image-soccer-team.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url("../images/desktop/image-soccer-team.jpg");
 }
 
 main .main-3 .card:nth-of-type(4){
-  background-image: url("../images/desktop/image-grid.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url("../images/desktop/image-grid.jpg");
 }
 
 main .main-3 .card:nth-of-type(5){
-  background-image: url("../images/desktop/image-from-above.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url("../images/desktop/image-from-above.jpg");
 }
 
 main .main-3 .card:nth-of-type(6){
-  background-image: url("../images/desktop/image-pocket-borealis.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url("../images/desktop/image-pocket-borealis.jpg");
 }
 
 main .main-3 .card:nth-of-type(7){
-  background-image: url("../images/desktop/image-curiosity.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url("../images/desktop/image-curiosity.jpg");
 }
 
 main .main-3 .card:last-of-type{
-  background-image: url("../images/desktop/image-fisheye.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)), url("../images/desktop/image-fisheye.jpg");
 }
