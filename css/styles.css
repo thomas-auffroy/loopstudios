@@ -13,19 +13,23 @@ a{
   text-decoration: none;
   color: white;
 }
+h1, h2, .btn{
+  font-family: "Josefin Sans", cursiv;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 
 a:hover{
   text-decoration: underline white 2px;
   text-underline-offset: 10px;
 }
-
-
-footer .upper-side .logos-sm img{
-  height: 24px;
-}
 footer .upper-side .logos-sm .image:hover{
   cursor: pointer;
   border-bottom: 2px solid white;
+}
+main .main-2 .btn:hover{
+  background: var(--black);
+  color: var(--white);
 }
 
 
@@ -58,20 +62,17 @@ header .upper-side .nav-bar{
   justify-content: space-between;
 }
 header .lower-side h1{
-  font-family: "Josefin Sans", cursiv;
-  text-transform: uppercase;
   margin: 2.5em 0em;
   border: 2px solid white;
   padding: 0.5em 1em 0.5em 0.7em;
   font-size: 4em;
   width: 50%;
-  font-weight: normal;
   line-height: 1em;
 }
 
 
 main{
-  padding: 6em 6em;
+  padding: 50px 170px;
   background: var(--white);
   color: var(--black);
   display: flex;
@@ -83,30 +84,32 @@ main .main-1{
 }
 main .main-1 .bg-main-1{
   flex-shrink: 0;
-  width: 50%;
-  height: 500px;
+  width: 800px;
+  height: 550px;
   background-image: url("../images/desktop/image-interactive.jpg");
   background-size: cover;
 }
 main .main-1 .info{
+  width: 100%;
   background: white;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 main .main-1 .info .text{
+  padding: 80px 0px 0px 80px;
   position: absolute;
   bottom: 0;
-  width: 400px;
+  width: calc(100% + 150px);
   background: white;
   transform: translate(-150px, 0px);
 }
 main .main-1 .info h2{
-  text-transform: uppercase;
   font-size: 3em;
   padding-bottom: 1em;
 }
 main .main-1 .info p{
+  color: var(--dark-gray);
   line-height: 2em;
 }
 
@@ -117,21 +120,22 @@ main .main-2{
   justify-content: space-between;
 }
 main .main-2 h2{
-  font-size: 3em;
+  font-size: 3.5em;
 }
 main .main-2 .btn{
-  text-transform: uppercase;
-  border: 1px black solid;
+  height: 20px;
+  letter-spacing: 2px;
+  border: 2px var(--very-dark-gray) solid;
+  border-radius: 2px;
   background: transparent;
-  padding: 5px 30px; 
-}
-main .main-2 .btn:hover{
-  background: var(--black);
-  color: var(--white);
+  padding: 0px 35px 0px 35px;
+  font-weight: 900;
+  font-size: 0.8em;
 }
 
+
 footer{
-  padding: 2em 3em;
+  padding: 50px 170px;
   display: flex;
   flex-direction: column;
 }
@@ -145,6 +149,9 @@ footer .upper-side .logos-sm{
   display: flex;
   justify-content: space-between;
   width: 200px;
+}
+footer .upper-side .logos-sm img{
+  height: 24px;
 }
 
 footer .lower-side{
