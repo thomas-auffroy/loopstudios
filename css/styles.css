@@ -9,7 +9,7 @@
   --dark-gray: hsl(0, 0%, 55%);
   --very-dark-gray: hsl(0, 0%, 41%);
 }
-a{
+a,u{
   text-decoration: none;
   color: white;
 }
@@ -19,10 +19,12 @@ h1, h2, .btn{
   text-transform: uppercase;
 }
 
-a:hover{
+
+a:hover u{
   text-decoration: underline white 2px;
   text-underline-offset: 10px;
 }
+
 footer .upper-side .logos-sm .image:hover{
   cursor: pointer;
   border-bottom: 2px solid white;
