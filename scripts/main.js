@@ -4,9 +4,13 @@ var name_;
 function enter(event) {
   name_ = event.target.innerHTML;
 
-  let len = name_.length - 3;
-
-  event.target.innerHTML = name_.substring(0, (len / 2)) + "<u>" + name_.substring(len / 2, (len / 2) + 3) + "</u>" + name_.substring((len / 2) + 3);
+  let len = name_.length;
+  if (len - 4 <= 2){
+    event.target.innerHTML = name_.substring(0, 1) + "<u>" + name_.substring(1, len - 1) + "</u>" + name_.substring(len - 1);
+  }
+  else{
+   event.target.innerHTML = name_.substring(0, 2) + "<u>" + name_.substring(2, len - 2) + "</u>" + name_.substring(len - 2);
+  }
   console.log(event.target.innerHTML);
 }
 
