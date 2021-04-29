@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1380px){
+  main .main-1 .bg-main-1{
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1250px){
+  header .lower-side h1{
+    font-size: 3.5em;
+  }
+}
+@media only screen and (max-width: 1050px){
+  footer .lower-side .nav-bar{
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 950px){
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 50px); 
+    grid-template-areas: 
+      "logo"
+      "about"
+      "careers"
+      "events"
+      "products"
+      "support"
+      "sm"
+      "copyright";      
+  }
+  footer .upper-side img{
+    grid-area: logo;
+  }
+  footer .upper-side .logos-sm{
+    grid-area: sm;
+  }
+  footer .lower-side .nav-bar p{
+    grid-area: copyright;
+  }
+}
