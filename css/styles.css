@@ -47,14 +47,20 @@ body{
 }
 
 header{
-  padding: 50px 170px;
+  padding: 50px 12vw;
   display: grid;
   background-image: url("../images/desktop/image-hero.jpg");
+  background-position: center; 
   background-size: cover;
+  height : 650px;
 }
 header .upper-side{
   display: flex;
   justify-content: space-between;
+}
+header .upper-side img{
+  height: 32px;
+  width: 192px
 }
 header .upper-side .nav-bar{
   margin-top: 10px;
@@ -64,11 +70,11 @@ header .upper-side .nav-bar{
 }
 header .lower-side h1{
   color: white;
-  margin: 2.5em 0em;
+  margin: 1.8em 0em;
   border: 2px solid white;
-  padding: 0.5em 1em 0.5em 0.7em;
-  font-size: 4em;
-  width: 50%;
+  padding: 0.5em 0em 0.4em 0.4em;
+  font-size: 5em;
+  width: 58%;
   line-height: 1em;
 }
 
@@ -95,11 +101,10 @@ main .main-1 .info{
   width: 100%;
   background: white;
   display: flex;
-  flex-direction: column;
   position: relative;
 }
 main .main-1 .info .text{
-  padding: 80px 0px 0px 80px;
+  padding: 81px 0px 0px 80px;
   position: absolute;
   bottom: 0;
   width: calc(100% + 150px);
